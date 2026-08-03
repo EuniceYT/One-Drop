@@ -1,0 +1,7 @@
+{{- $url := .Destination -}}
+{{- if not (urls.Parse $url).IsAbs -}}
+  {{- $url = $url | absURL -}}
+{{- end -}}
+<div style="text-align: center; margin: 1.5rem 0;">
+  <img src="{{ $url }}" alt="{{ .Text }}" {{- with .Title }} title="{{ . }}"{{ end }} loading="lazy" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 6px 20px rgba(74, 59, 50, 0.12); display: inline-block;" />
+</div>
