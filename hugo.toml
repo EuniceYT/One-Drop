@@ -1,0 +1,69 @@
+baseURL = 'https://username.github.io/'
+locale = 'zh-tw'
+defaultContentLanguage = 'zh-tw'
+title = 'One Drop Journal'
+theme = 'PaperMod'
+
+# 允許 Goldmark 渲染 HTML 標籤
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# PaperMod 主題參數
+[params]
+  env = 'production'
+  title = 'One Drop Journal'
+  description = '每一個生命，都從一滴水開始。記錄植物、生活、園藝療癒與品牌成長的點滴。'
+  keywords = ['植物', '園藝療癒', '生活', 'One Drop Journal']
+  dateFormat = '2006-01-02'
+
+  # 功能啟用 (PaperMod 參數)
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+
+  # 封面圖片設定 (Cover Image)
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+  # 右上角/頁首品牌名稱 (Header Label)
+  [params.label]
+    text = 'One Drop Journal'
+
+  # 主頁 Profile 模式 (Home Info Params)
+  [params.homeInfoParams]
+    Title = 'Every Life Begins with One Drop.'
+    Content = '每一個生命，都從一滴水開始。記錄植物、生活、園藝療癒與品牌成長的點滴。'
+    Logo = 'images/logo.jpg'
+
+# 導覽選單 (Menu)
+[[menu.main]]
+  name = 'One Drop 日誌'
+  url = '/journal/'
+  weight = 10
+
+[[menu.main]]
+  name = '植物生活'
+  url = '/living/'
+  weight = 20
+
+[[menu.main]]
+  name = '園藝療癒'
+  url = '/therapy/'
+  weight = 30
+
+[[menu.main]]
+  name = '生活分享'
+  url = '/slow-life/'
+  weight = 40
+
+[[menu.main]]
+  name = '一滴觀點'
+  url = '/thoughts/'
+  weight = 50

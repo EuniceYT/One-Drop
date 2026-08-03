@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap');
+
+:root {
+    /* One Drop 品牌色彩系統 (淺色模式) */
+    --theme: #FDFBF7;        /* 象牙白 (背景色) */
+    --entry: #4A3B32;        /* 深木色 (主要文字) */
+    --primary: #2C4A3E;      /* 森林綠 (標題與重點色) */
+    --secondary: #D4A359;    /* 暖金色 (強調色) */
+    --tertiary: #EFECE6;     /* 輔助卡片與區塊背景 */
+    --content: #4A3B32;      /* 內文色彩 */
+    --code-bg: #F4F1EA;      /* 程式碼底色 */
+    --border: #E8E3DA;       /* 邊框顏色 */
+}
+
+/* 深色模式品牌色彩調整 */
+.dark {
+    --theme: #1A231E;        /* 深森林黑背景 */
+    --entry: #E6DFD5;        /* 暖米白文字 */
+    --primary: #8FAF9B;      /* 柔和森林綠標題 */
+    --secondary: #E5B873;    /* 明亮暖金色 */
+    --tertiary: #243029;
+    --content: #E6DFD5;
+    --code-bg: #222C26;
+    --border: #2E3B33;
+}
+
+/* 全域字體與行高設定 */
+body {
+    font-family: 'Noto Serif TC', serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Georgia, sans-serif;
+    color: var(--entry);
+    background-color: var(--theme);
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+}
+
+/* 標題與品牌 Logo 字體樣式 */
+h1, h2, h3, h4, h5, h6, .logo a {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* 連結 hover 轉場動畫 */
+a {
+    color: var(--primary);
+    transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+/* 首頁 Profile 區塊內容文字微調與品牌 Logo 居中 */
+.first-entry.home-info {
+    text-align: center;
+}
+
+.home-info-logo {
+    text-align: center;
+    margin: 1.8rem 0 1rem 0;
+}
+
+.home-info-logo img {
+    max-width: 220px;
+    height: auto;
+    display: inline-block;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(74, 59, 50, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-info-logo img:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(74, 59, 50, 0.12);
+}
+
+/* 文章內文行高與段落微調 */
+.post-content {
+    line-height: 1.85;
+    font-size: 1.05rem;
+}
+
+.post-content p {
+    margin-bottom: 1.5em;
+}
+
+/* 內文引言 (Blockquote) - 暖金色邊框與淡金背景 */
+blockquote {
+    border-left: 4px solid var(--secondary);
+    background-color: rgba(212, 163, 89, 0.08);
+    margin: 1.8em 0;
+    padding: 1em 1.4em;
+    color: var(--entry);
+    border-radius: 0 6px 6px 0;
+}
+
+blockquote p {
+    margin-bottom: 0;
+}
+
+/* 文章列表卡片與標題懸浮效果 */
+.post-entry {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--border);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 59, 50, 0.06);
+}
+
+.post-title a {
+    color: var(--primary);
+}
+
+.post-title a:hover {
+    color: var(--secondary);
+}

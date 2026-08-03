@@ -1,0 +1,12 @@
+# Hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Submodule / Temp
+*.log
