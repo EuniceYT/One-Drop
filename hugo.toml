@@ -28,9 +28,9 @@ theme = 'PaperMod'
 
   # 封面圖片設定 (Cover Image)
   [params.cover]
-    hidden = false
-    hiddenInList = false
-    hiddenInSingle = false
+    hidden = true
+    hiddenInList = true
+    hiddenInSingle = true
 
   # 右上角/頁首品牌名稱 (Header Label)
   [params.label]

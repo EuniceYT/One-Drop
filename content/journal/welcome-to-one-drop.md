@@ -5,10 +5,6 @@ draft: false
 categories: ["One Drop 日誌"]
 tags: ["品牌故事", "發刊詞", "園藝療癒"]
 description: "如果有人問我 One Drop 是一間什麼樣的工作室？我想，我不會回答植物店，也不會回答園藝治療工作室。因為對我而言，植物從來都不是主角，真正重要的，是植物陪伴人生活的過程。"
-cover:
-  image: "/images/journal/one-drop-cover.jpg"
-  alt: "Every Life Begins with One Drop"
-  relative: false
 ---
 
 如果有人問我：

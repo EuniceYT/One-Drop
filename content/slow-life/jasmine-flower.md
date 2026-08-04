@@ -5,10 +5,6 @@ draft: false
 categories: ["生活分享"]
 tags: ["虎頭茉莉", "植物生活", "芳香療癒", "生活隨筆"]
 description: "層層疊疊的花瓣開得像小玫瑰一樣，茉莉香氣裡的芳樟醇與乙酸苄酯能調節神經系統、降低壓力荷爾蒙，默默帶給人平靜又堅定的療癒感。"
-cover:
-  image: "images/slow-life/jasmine-flower.png"
-  alt: "虎頭茉莉"
-  relative: false
 ---
 
 ![虎頭茉莉](images/slow-life/jasmine-flower.png)
